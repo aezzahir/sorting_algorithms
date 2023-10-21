@@ -9,9 +9,10 @@
  */
 int main(void)
 {
-	int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
+	int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7, -1};
 	size_t n = sizeof(array) / sizeof(array[0]);
 
+	n = n - 1;
 	print_array(array, n);
 	printf("\n");
 	bubble_sort(array, n);
