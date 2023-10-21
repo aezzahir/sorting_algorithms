@@ -19,6 +19,7 @@ int temp = *n1;
  * @array: the array to divide
  * @start: the beginning of the array
  * @end: the end of the array
+ * @size: the size of the array
  * Return: return the pivot index after the rearrangement
  */
 int Partition(int *array, int start, int end, size_t size)
@@ -43,7 +44,7 @@ if (pIndex != end)
 {
 print_array(array, size);
 }
-return pIndex;
+return (pIndex);
 }
 
 
